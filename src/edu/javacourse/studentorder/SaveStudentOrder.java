@@ -12,7 +12,7 @@ public class SaveStudentOrder
 {
     public static void main(String[] args) throws Exception {
 //        List<Street> d = new DictionaryDaoImpl().findStreets("про");
-//       for(Street s : d) {
+//        for(Street s : d) {
 //            System.out.println(s.getStreetName());
 //        }
 //        List<PassportOffice> po = new DictionaryDaoImpl().findPassportOffices("010020000000");
@@ -24,7 +24,7 @@ public class SaveStudentOrder
 //        for(RegisterOffice r : ro) {
 //            System.out.println(r.getOfficeName());
 //        }
-//
+
 //        List<CountryArea> ca1 = new DictionaryDaoImpl().findAreas("");
 //        for (CountryArea c : ca1) {
 //            System.out.println(c.getAreaId() + ":" + c.getAreaName());
@@ -45,19 +45,19 @@ public class SaveStudentOrder
 //            System.out.println(c.getAreaId() + ":" + c.getAreaName());
 //        }
 
-
-        StudentOrder s = buildStudentOrder(10);
+//
+//        StudentOrder s = buildStudentOrder(10);
         StudentOrderDao dao = new StudentOrderDaoImpl();
-        Long id = dao.saveStudentOrder(s);
-       System.out.println(id);
+//        Long id = dao.saveStudentOrder(s);
+//        System.out.println(id);
 
         List<StudentOrder> soList = dao.getStudentOrders();
         for(StudentOrder so : soList) {
             System.out.println(so.getStudentOrderId());
         }
-      StudentOrder so = new StudentOrder();
-       long ans = saveStudentOrder(so);
-       System.out.println(ans);
+//        StudentOrder so = new StudentOrder();
+//        long ans = saveStudentOrder(so);
+//        System.out.println(ans);
     }
 
     static long saveStudentOrder(StudentOrder studentOrder) {
